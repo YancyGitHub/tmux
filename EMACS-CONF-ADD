@@ -1,4 +1,4 @@
-;;下面内容添加到 emacs 配置我文件 .emacs
+;;添加到 emacs 配置文件 .emacs
 
 ;; 如果在emacs中配置使用 Ctrl + 导航键 切换窗口，但是在 tmux 中使用 emacs，Ctrl+导航键被转换成了 M-[ <a|b|c|d>，所设置如下按键配置，在tmux中的emacs依旧可以使用Ctrl+导航键切换窗口
 (global-set-key (kbd "M-[ d") 'windmove-left)   ; 左边窗口
