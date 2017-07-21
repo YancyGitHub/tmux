@@ -1,0 +1,10 @@
+;;下面内容添加到 emacs 配置我文件 .emacs
+
+;; 如果在emacs中配置使用 Ctrl + 导航键 切换窗口，但是在 tmux 中使用 emacs，Ctrl+导航键被转换成了 M-[ <a|b|c|d>，所设置如下按键配置，在tmux中的emacs依旧可以使用Ctrl+导航键切换窗口
+(global-set-key (kbd "M-[ d") 'windmove-left)   ; 左边窗口
+(global-set-key (kbd "M-[ c") 'windmove-right)  ; 右边窗口
+(global-set-key (kbd "M-[ a") 'windmove-up)     ; 上边窗口
+(global-set-key (kbd "M-[ b") 'windmove-down)   ; 下边窗口
+
+;; tmux中使用emaxs，无法使用 Shift+导航键 标记区域，添加快捷键用于开启/关闭标记区域
+(global-set-key (kbd "M-q") 'set-mark-command)
